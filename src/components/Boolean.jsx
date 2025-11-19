@@ -1,6 +1,6 @@
-import image from '../assets/Images/hero.jpg';
-import naniimage from '../assets/Images/heroine.jpeg';
-import murnalimage from '../assets/Images/Minnal_Murali.jpg';
+import image from '../assets/images/hero.jpg';
+import naniimage from '../assets/images/heroine.jpeg';
+import murnalimage from '../assets/images/Minnal_Murali.jpg';
 
 const Boolean = () => {
 
