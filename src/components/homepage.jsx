@@ -1,12 +1,11 @@
-const Homepage=()=>{
-    return(
-        <>
-        <div>
-            Welcome to the movies
-        </div>
-        </>
-    )
+const Homepage = () => {
+  return (
+    <>
+      <div className="home-container">
+        Welcome to the Movies
+      </div>
+    </>
+  );
+};
 
-}
-
-export default Homepage
+export default Homepage;

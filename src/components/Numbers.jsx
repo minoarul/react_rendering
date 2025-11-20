@@ -1,5 +1,3 @@
-
-
 const Numbers = () => {
   const table = [];
 
@@ -12,7 +10,7 @@ const Numbers = () => {
   }
 
   return (
-    <div style={{ textAlign: "center",marginTop:"20px"}}>
+    <div className="numbers-container">
       <h2>Multiplication Table of 2</h2>
       {table}
     </div>

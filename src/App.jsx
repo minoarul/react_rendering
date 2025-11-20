@@ -1,47 +1,32 @@
-
 import { Route, Routes } from 'react-router-dom'
 import Navbar from "./components/navbar"
 import Homepage from './components/homepage'
 import String from './components/String'
 import Numbers from './components/Numbers'
 import Boolean from './components/Boolean'
+import "./App.css"
 
-const App=()=>{
-  return(
+const App = () => {
+  return (
     <>
-      <div>
-        <div>
-          <h1>Movies</h1>
-        </div>
-        
-    
-        
+      <div className="header">
+        <h1>Movies</h1>
       </div>
-      <div>
-        <Navbar/>
-        <main>
+
+      <div className="main-layout">
+        <Navbar />
+
+        <main className="page-content">
           <Routes>
-           <Route path="/" element={<Homepage/>}/>
-           
+            <Route path="/" element={<Homepage />} />
+            <Route path="/About" element={<String />} />
+            <Route path="/Product" element={<Numbers />} />
+            <Route path="/Service" element={<Boolean />} />
           </Routes>
         </main>
-        <div>
-          <String/>
-        </div>
-        <div>
-          <Numbers/>
-        </div>
-        <div>
-          <Boolean/>
-        </div>
-
       </div>
-      
-  
-         
     </>
   )
-
-
 }
+
 export default App

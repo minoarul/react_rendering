@@ -1,0 +1,359 @@
+/* ---------------------------------------------------------
+   GLOBAL STYLES
+--------------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f4f7;
+}
+
+/* ---------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------
+   LAYOUT WRAPPER
+--------------------------------------------------------- */
+.main-layout {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR NAVBAR
+--------------------------------------------------------- */
+nav {
+  width: 220px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 2px solid #e5e7eb;
+  min-height: 90vh;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1f2937;
+  padding: 10px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #e0e7ff;
+  color: #1e3a8a;
+}
+
+/* ---------------------------------------------------------
+   PAGE CONTENT
+--------------------------------------------------------- */
+.page-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.page-content h2,
+.page-content p {
+  margin: 10px 0;
+}
+
+/* ---------------------------------------------------------
+   HOMEPAGE BOX
+--------------------------------------------------------- */
+.home-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e3a8a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------
+   CREW PAGE
+--------------------------------------------------------- */
+.crew-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.crew-container h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.crew-container p {
+  font-size: 18px;
+  color: #374151;
+}
+
+/* ---------------------------------------------------------
+   MOVIE DETAILS / ABOUT
+--------------------------------------------------------- */
+.movie {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.aboutmovie h1 {
+  margin: 0 0 15px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.aboutmovie p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ---------------------------------------------------------
+   NUMBERS PAGE
+--------------------------------------------------------- */
+.numbers-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.numbers-container h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #1e3a8a;
+}
+
+.numbers-container p {
+  font-size: 18px;
+  color: #374151;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------------
+   BOOLEAN PAGE — IMAGES
+--------------------------------------------------------- */
+.ternary img,
+.optional img {
+  width: 280px;
+  height: 350px;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.optional {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* ---------------------------------------------------------
+   NULLISH SECTION TEXT BOX
+--------------------------------------------------------- */
+.nullish {
+  max-width: 700px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  line-height: 1.6;
+}
+
+.nullish p {
+  font-size: 18px;
+  color: #374151;
+  text-align: justify;
+}
+
+/* ---------------------------------------------------------
+   MOVIE INFO BOX
+--------------------------------------------------------- */
+.box {
+  width: 350px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px auto;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.box h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #374151;
+}
+
+.box h3 {
+  color: #111827;
+}
+
+.box h5 {
+  color: #6b7280;
+}
+
+/* ---------------------------------------------------------
+   TICKET BOOKING SECTION
+--------------------------------------------------------- */
+.ticketmain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.ticket_details {
+  background: white;
+  width: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.ticket_booking h1 {
+  font-size: 22px;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.ticket_booking p {
+  margin: 5px 0;
+  color: #374151;
+  font-size: 16px;
+}
+
+.ticket_booking button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ticket_booking button:hover {
+  background: #1e3a8a;
+}
+
+/* ---------------------------------------------------------
+   BANNER
+--------------------------------------------------------- */
+.banner {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ------ TOP NAVBAR ------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #1e3a8a;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.linklist {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.linklist:hover {
+  background: #374bb7;
+}
+
+

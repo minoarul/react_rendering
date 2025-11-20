@@ -15,9 +15,6 @@ const Boolean = () => {
     { moviename: "Minnal Murali", time: "9pm to 11pm", location: "Kasi Theatre" }
   ];
 
-  const heroname = "Tovino Thomas";
-  const heroinename = "Femina George";
-
   const datas = {
     moviename: "Minnal Murali",
     heroname: "Tovino Thomas",
@@ -56,7 +53,8 @@ const Boolean = () => {
         </section>
       )}
 
-      <section style={{ marginTop: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+      {/* Removed Inline Style → Added className="movie_box_section" */}
+      <section className="movie_box_section">
         <div className="box">
           <h1>{datas.moviename}</h1>
           <p>{datas.heroname}</p>
